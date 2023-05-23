@@ -1,0 +1,8 @@
+.SamayImage{
+    width: 430px;
+    transition:2s
+}
+.SamayImage:hover{
+    width: 460px;
+    transition:2s
+}
