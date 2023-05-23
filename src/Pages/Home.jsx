@@ -4,9 +4,12 @@ import "./Pages.css"
 
 function Home() {
   return (
-    <div style={{display:"flex", justifyContent:"space-between", margin:"100px"}}>
+    <div style={{display:"flex", justifyContent:"space-between", margin:"50px 100px 50px 100px "}}>
         <h1>Samay</h1>
+    
         <img className="SamayImage"  src={samayImage2} alt="image" />
+   
+        
     </div>
   )
 }
