@@ -1,10 +1,11 @@
 import React from 'react'
+import logo from "../images/logo.png"
 import './Components.css';
 
 export default function NavBar() {
   return (
     <div className='navbar'>
-        <h1>SAM<span style={{color:"#389AF4"}}>AY</span></h1>
+        <img src={logo} alt="" style={{width:"200px"}}/>
         <div style={{display:"flex", justifyContent:"space-between", width:"40%"}}>
             <h3>Home</h3>
             <h3>Home</h3>
