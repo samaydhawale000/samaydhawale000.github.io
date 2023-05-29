@@ -1,0 +1,325 @@
+{
+  "recipe": [
+    {
+      "id": 1,
+      "name": "Paneer Tikka Masala",
+      "type": "veg",
+      "category": "indian",
+      "price": 100,
+      "ingredients": ["Paneer", "Yogurt", "Tomatoes", "Onions", "Spices"],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 2,
+      "name": "Chicken Fried Rice",
+      "type": "non-veg",
+      "category": "chinese",
+      "price": 121,
+      "ingredients": ["Chicken", "Rice", "Eggs", "Carrots", "Peas"],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 3,
+      "name": "Pad Thai",
+      "type": "veg",
+      "category": "thai",
+      "price": 92,
+      "ingredients": ["Rice Noodles", "Tofu", "Beansprouts", "Peanuts"],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 4,
+      "name": "Margherita Pizza",
+      "type": "veg",
+      "category": "italian",
+      "price": 83,
+      "ingredients": [
+        "Pizza Dough",
+        "Tomato Sauce",
+        "Mozzarella Cheese",
+        "Basil"
+      ],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 5,
+      "name": "Pasta Carbonara",
+      "type": "non-veg",
+      "category": "italian",
+      "price": 114,
+      "ingredients": [
+        "Spaghetti",
+        "Bacon",
+        "Eggs",
+        "Parmesan Cheese",
+        "Black Pepper"
+      ],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 6,
+      "name": "Chicken Biryani",
+      "type": "non-veg",
+      "category": "indian",
+      "price": 135,
+      "ingredients": ["Basmati Rice", "Chicken", "Yogurt", "Spices"],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+
+    {
+      "id": 7,
+      "name": "Mushroom Manchurian",
+      "type": "veg",
+      "category": "chinese",
+      "price": 96,
+      "ingredients": ["Mushrooms", "Capsicum", "Ginger", "Garlic", "Soy Sauce"],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 8,
+      "name": "Tom Yum Soup",
+      "type": "veg",
+      "category": "thai",
+      "price": 77,
+      "ingredients": ["Lemongrass", "Mushrooms", "Chili", "Lime"],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 9,
+      "name": "Lasagna",
+      "type": "non-veg",
+      "category": "italian",
+      "price": 148,
+      "ingredients": [
+        "Lasagna Sheets",
+        "Ground Beef",
+        "Tomato Sauce",
+        "Cheese"
+      ],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 10,
+      "name": "Tandoori Chicken",
+      "type": "non-veg",
+      "category": "indian",
+      "price": 119,
+      "ingredients": ["Chicken", "Yogurt", "Spices", "Lemon Juice"],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 11,
+      "name": "Vegetable Hakka Noodles",
+      "type": "veg",
+      "category": "chinese",
+      "price": 810,
+      "ingredients": [
+        "Noodles",
+        "Mixed Vegetables",
+        "Soy Sauce",
+        "Ginger",
+        "Garlic"
+      ],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 12,
+      "name": "Green Curry",
+      "type": "veg",
+      "category": "thai",
+      "price": 100,
+      "ingredients": [
+        "Green Curry Paste",
+        "Coconut Milk",
+        "Vegetables",
+        "Basil"
+      ],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 13,
+      "name": "Caprese Salad",
+      "type": "veg",
+      "category": "italian",
+      "price": 71,
+      "ingredients": ["Tomatoes", "Mozzarella Cheese", "Basil", "Olive Oil"],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 14,
+      "name": "Spaghetti Aglio e Olio",
+      "type": "veg",
+      "category": "italian",
+      "price": 92,
+      "ingredients": ["Spaghetti", "Garlic", "Olive Oil", "Red Pepper Flakes"],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 15,
+      "name": "Palak Paneer",
+      "type": "veg",
+      "category": "indian",
+      "price": 93,
+      "ingredients": ["Spinach", "Paneer", "Onions", "Spices"],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 16,
+      "name": "Sesame Chicken",
+      "type": "non-veg",
+      "category": "chinese",
+      "price": 124,
+      "ingredients": ["Chicken", "Sesame Seeds", "Soy Sauce", "Honey"],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 17,
+      "name": "Tom Kha Gai",
+      "type": "non-veg",
+      "category": "thai",
+      "price": 105,
+      "ingredients": [
+        "Coconut Milk",
+        "Chicken",
+        "Mushrooms",
+        "Galangal",
+        "Lemongrass"
+      ],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 18,
+      "name": "Margherita Pasta",
+      "type": "veg",
+      "category": "italian",
+      "price": 86,
+      "ingredients": ["Pasta", "Tomatoes", "Mozzarella Cheese", "Basil"],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 19,
+      "name": "Chicken Korma",
+      "type": "non-veg",
+      "category": "indian",
+      "price": 127,
+      "ingredients": ["Chicken", "Yogurt", "Cashews", "Spices"],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 20,
+      "name": "General Tso's Tofu",
+      "type": "veg",
+      "category": "chinese",
+      "price": 98,
+      "ingredients": ["Tofu", "Soy Sauce", "Ginger", "Garlic", "Chili Paste"],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+
+    {
+      "id": 21,
+      "name": "Massaman Curry",
+      "type": "non-veg",
+      "category": "thai",
+      "price": 119,
+      "ingredients": ["Beef", "Potatoes", "Peanuts", "Coconut Milk", "Spices"],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 22,
+      "name": "Bruschetta",
+      "type": "veg",
+      "category": "italian",
+      "price": 610,
+      "ingredients": ["Baguette", "Tomatoes", "Garlic", "Basil", "Olive Oil"],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 23,
+      "name": "Ravioli",
+      "type": "veg",
+      "category": "italian",
+      "price": 109,
+      "ingredients": ["Ravioli Pasta", "Cheese", "Spinach", "Tomato Sauce"],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 24,
+      "name": "Aloo Gobi",
+      "type": "veg",
+      "category": "indian",
+      "price": 81,
+      "ingredients": ["Potatoes", "Cauliflower", "Onions", "Spices"],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 25,
+      "name": "Sweet and Sour Chicken",
+      "type": "non-veg",
+      "category": "chinese",
+      "price": 122,
+      "ingredients": [
+        "Chicken",
+        "Bell Peppers",
+        "Pineapple",
+        "Sweet and Sour Sauce"
+      ],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 26,
+      "name": "Pad Thai",
+      "type": "non-veg",
+      "category": "thai",
+      "price": 113,
+      "ingredients": [
+        "Rice Noodles",
+        "Shrimp",
+        "Tofu",
+        "Bean Sprouts",
+        "Peanuts"
+      ],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 27,
+      "name": "Margherita Pizza",
+      "type": "veg",
+      "category": "italian",
+      "price": 94,
+      "ingredients": ["Pizza Dough", "Tomatoes", "Mozzarella Cheese", "Basil"],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 28,
+      "name": "Chicken Biryani",
+      "type": "non-veg",
+      "category": "indian",
+      "price": 135,
+      "ingredients": ["Basmati Rice", "Chicken", "Spices", "Yogurt", "Saffron"],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 29,
+      "name": "Spring Rolls",
+      "type": "veg",
+      "category": "chinese",
+      "price": 76,
+      "ingredients": [
+        "Spring Roll Wrappers",
+        "Cabbage",
+        "Carrots",
+        "Mushrooms"
+      ],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    },
+    {
+      "id": 30,
+      "name": "Mango Sticky Rice",
+      "type": "veg",
+      "category": "thai",
+      "price": 87,
+      "ingredients": ["Sticky Rice", "Mango", "Coconut Milk", "Sugar"],
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2353&q=80"
+    }
+  ]
+}
