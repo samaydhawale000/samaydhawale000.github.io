@@ -2,9 +2,10 @@
     width: 500px;
     position: relative;
     animation-name: animateUser;
-    animation-duration: 8s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
 }
+
 
 @keyframes animateUser{
    0%{
@@ -31,7 +32,7 @@ color: #ffffff;
 position: relative;
 font-size: 34px;
 color: #002138;
--webkit-text-stroke: 0.5px #006FBC;;
+-webkit-text-stroke: 0.5px #007fda;;
 }
 #designation::before{
   content: attr(data-text);
@@ -54,8 +55,7 @@ color: #002138;
     width :100%
   }
 }
-#mainBG{
-  background-image: url("../images/background.png");
+#bgImage{
   width:100%;
-  position: absolute;
+ position: relative;
 }
