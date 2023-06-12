@@ -59,3 +59,25 @@ color: #002138;
   width:100%;
  position: relative;
 }
+
+#buttons{
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  width: 50%;
+  margin-left: -1%;
+}
+
+#buttons>:nth-child(1){
+  width: 42%;
+}
+
+#buttons>div{
+  width: 16%;
+}
+
+#buttons>div>button{
+  display: block;
+  margin: auto;
+  
+}

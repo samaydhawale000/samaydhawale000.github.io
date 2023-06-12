@@ -3,11 +3,13 @@ import samayImage2 from "../images/samayImage2.png"
 import "./Pages.css"
 import background from "../images/background.png"
 import Button from '../components/Button'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faFileArrowDown,faLinkedIn,faGitHub} from '@fortawesome/free-solid-svg-icons'
 
 function Home() {
  
   return (
-    <div style={{width:"100%"}}>
+    <div style={{width:"100%", height:"500px"}}>
       <img className='bgImage' src={background} alt='bgImage' style={{width:"100%"}} />
  <div  style={{display:"flex", justifyContent:"space-between", margin:"-38% 60px 50px 100px",}}>
        
@@ -18,11 +20,29 @@ function Home() {
         <h1>I am a</h1>
         <h1 data-text="Full Stack Web Developer" id="designation">Full Stack Web Developer</h1>
         </div>
-       <Button text={"Resume"}/> 
+
+        <div id='buttons'>
+          <div>
+          <Button text={"Resume"} icon={<FontAwesomeIcon icon={faFileArrowDown}/>}/>       
+          </div>
+          <div>
+          <Button icon={<FontAwesomeIcon icon={faFileArrowDown}/> }/>       
+          </div>
+          <div>
+          <Button  icon={<FontAwesomeIcon icon={faFileArrowDown}/>}/>       
+          </div>
+          <div>
+          <Button  icon={<FontAwesomeIcon icon={faFileArrowDown}/>}/>       
+          </div>
+         
+        </div>
+      
        </div>
     
         <img className="SamayImage"  src={samayImage2} alt="image" />
     </div>
+
+    
     </div>
    
   )

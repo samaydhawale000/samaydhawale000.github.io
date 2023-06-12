@@ -1,11 +1,9 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faFileArrowDown} from '@fortawesome/free-solid-svg-icons'
 
-export default function Button({text}) {
+export default function Button({text,icon}) {
   return (
     <div>
-   <button id='btn'>{text} <FontAwesomeIcon icon={faFileArrowDown}/></button>
+   <button id='btn'>{text} {icon}</button>
     </div>
   )
 }
