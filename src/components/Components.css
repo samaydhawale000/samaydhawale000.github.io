@@ -1,21 +1,29 @@
-.navbar{
+#nav-menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 60px 0px 60px;
+    padding: 20px 60px 20px 60px;
     box-sizing: border-box;
-    background-color:#001723 ;
+    background-color:#00121c ;
     z-index: 10;
     position: fixed;
     width: 100%;
-    border-radius: 8px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.NavLink{
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.NavLink:hover{
+    color: #0092fa;
+    text-decoration: underline; 
 }
 
 #btn{
     padding: 9px 16px 9px 16px;
     font-size: 18px;
-    background-color: #179eff;
+    background-color: #007fda;
     color: #fff;
     border: none;
     display: block;
@@ -33,4 +41,11 @@
     font-size: 19px;
     background-color: #002e50;
     border: 1.5px solid #0095ff;
+}
+#resumeBtn{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    width:16%;
+    height:45px
 }

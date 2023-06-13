@@ -2,27 +2,27 @@
     width: 500px;
     position: relative;
     animation-name: animateUser;
-    animation-duration: 6s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 
 
 @keyframes animateUser{
    0%{
-    margin-top: 20px;
+    margin-top: 15px;
    
    }
    50%{
-    margin-top: -30px;
-    margin-right: 30px;
+    margin-top: -25px;
+    margin-right: 25px;
    }
     100%{
-      margin-top: 20px;
+      margin-top: 15px;
     }
 }
 
 
-#myName{
+#user-detail-name{
   margin: 0px;
 font-size: 56px;
 color: #ffffff;
@@ -55,7 +55,7 @@ color: #002138;
     width :100%
   }
 }
-#bgImage{
+#home-img{
   width:100%;
  position: relative;
 }
@@ -64,20 +64,48 @@ color: #002138;
   display: flex;
   margin-top: 20px;
   justify-content: space-between;
-  width: 50%;
+  width: 40%;
   margin-left: -1%;
+  height:40px;
+  align-items:center
 }
 
 #buttons>:nth-child(1){
-  width: 42%;
+  width: 52%;
 }
 
 #buttons>div{
-  width: 16%;
+  width: 22%;
 }
 
 #buttons>div>button{
   display: block;
   margin: auto;
-  
+}
+
+.copyBtnDiv{
+  padding:0px 0px 0px 16px;
+  box-sizing:border-box;
+  width:54%;
+  border:solid #007fda 1px;
+  border-radius:8px;
+  display:flex;
+  height:40px;
+  align-items:center;
+  justify-content:space-between
+}
+.copyBtnDiv>button{
+  height:100%;
+  box-sizing:border-box;
+  padding:0px 10px 0px 10px;
+  border-radius:0px 8px 8px 0px;
+  color:#fff;
+  font-size:16px;
+  background:#007fda;
+  border:none;
+  cursor:pointer;
+  transition:0.3s
+}
+.copyBtnDiv>button:hover{
+  background:#004a7f ;
 }
