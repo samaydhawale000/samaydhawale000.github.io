@@ -6,6 +6,7 @@ import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faHouse,faFileArrowDown,faAddressCard,faBriefcase,faCode,faPhoneVolume} from '@fortawesome/free-solid-svg-icons';
 import { faGithub,} from '@fortawesome/free-brands-svg-icons'
+import ResumeBtn from './ResumeBtn';
 
 export default function NavBar() {
   return (
@@ -19,7 +20,9 @@ export default function NavBar() {
             <NavLink class="nav-link contact" className="NavLink" > <FontAwesomeIcon icon={faGithub} /> GITHUB</NavLink>
             <NavLink class="navLink" className="NavLink"> <FontAwesomeIcon icon={faPhoneVolume} size="sm" />  CONTACT</NavLink>
           <div id="resumeBtn">
-          <Button text={"Resume"} class="nav-link resume" icon={<FontAwesomeIcon icon={faFileArrowDown}/>}/>       
+          <ResumeBtn>
+                    Resume <FontAwesomeIcon icon={faFileArrowDown} />
+                  </ResumeBtn>       
           </div>
         </div>
     </div>

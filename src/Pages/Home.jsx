@@ -1,29 +1,33 @@
-import React from 'react'
-import samayImage2 from "../images/samayImage2.png"
-import "./Pages.css"
-import background from "../images/background.jpg"
-import Button from '../components/Button'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFileArrowDown, faPhoneVolume,faEnvelope,faCopy} from '@fortawesome/free-solid-svg-icons';
-import {faLinkedin,faGithub} from '@fortawesome/free-brands-svg-icons'
-import {useState,useEffect} from "react"
-import { Link } from 'react-router-dom';
+import React from "react";
+import samayImage2 from "../images/samayImage2.png";
+import "./Pages.css";
+import background from "../images/background.jpg";
+import Button from "../components/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFileArrowDown,
+  faPhoneVolume,
+  faEnvelope,
+  faCopy,
+} from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import ResumeBtn from "../components/ResumeBtn";
 
 function Home() {
-
   const [phone, setPhone] = useState(false);
   const [mail, setMail] = useState(false);
 
   const handleCopyPhone = () => {
-      navigator.clipboard.writeText('9921695204');
-      setPhone(true);
+    navigator.clipboard.writeText("9921695204");
+    setPhone(true);
   };
-  
+
   const handleCopyMail = () => {
-    
-      // Copy the desired text to the clipboard
-      navigator.clipboard.writeText('samaydhawale1@gmail.com');
-      setMail(true)
+    // Copy the desired text to the clipboard
+    navigator.clipboard.writeText("samaydhawale1@gmail.com");
+    setMail(true);
   };
 
   useEffect(() => {
@@ -41,59 +45,111 @@ function Home() {
     }
 
     return () => clearTimeout(timeoutId);
-  }, [mail,phone]);
- 
- 
+  }, [mail, phone]);
+
   return (
     <div>
-    <div style={{width:"100%",height:"680px"}}>
-      <img className='home-img' src={background} alt='bgImage' style={{width:"100%"}}  />
- <div  style={{display:"flex", justifyContent:"space-between", margin:"-35% 60px 50px 100px",}}>
-       
-       <div style={{marginTop:"30px"}}>
-        <h1>Hello👋, My name is</h1>
-        <h1 id="user-detail-name">Samay Subodh Dhawale</h1>
-        <div style={{display:"flex", width:"80%", justifyContent:"space-between", alignItems:"baseline"}}>
-        <h1>I am a</h1>
-        <h1 data-text="Full Stack Web Developer" id="designation">Full Stack Web Developer</h1>
-        </div>
+      <div style={{ width: "100%", height: "680px" }}>
+        <img
+          className="home-img"
+          src={background}
+          alt="bgImage"
+          style={{ width: "100%" }}
+        />
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            margin: "-35% 60px 50px 100px",
+          }}
+        >
+          <div style={{ marginTop: "30px" }}>
+            <h1>Hello👋, My name is</h1>
+            <h1 id="user-detail-name">Samay Subodh Dhawale</h1>
+            <div
+              style={{
+                display: "flex",
+                width: "80%",
+                justifyContent: "space-between",
+                alignItems: "baseline",
+              }}
+            >
+              <h1>I am a</h1>
+              <h1 data-text="Full Stack Web Developer" id="designation">
+                Full Stack Web Developer
+              </h1>
+            </div>
 
-        <div id='buttons'>
-          <div>
-          <Button text={"Resume"} icon={<FontAwesomeIcon icon={faFileArrowDown}/>}/>       
-          </div>
-          <div>
-            <Link to="https://github.com/samaydhawale000" target="_blank"><Button id="contact-github" icon={<FontAwesomeIcon icon={faGithub} size="lg" />}/> </Link>
-                
-          </div>
-          <div>
-            <Link to="https://www.linkedin.com/in/samay-dhawale-a7a793221/" target="_blank"> <Button id="contact-linkedin" icon={<FontAwesomeIcon icon={faLinkedin} size="lg"/>}/></Link>
-          </div>   
-        </div>
-         
-         <div style={{display:"flex", justifyContent:"space-between", marginTop:"30px"}}>
-         <div className="copyBtnDiv" style={{width:"42%"}}>
-          <p id="contact-phone"><FontAwesomeIcon icon={faPhoneVolume} size="sm" />  9921695204</p>
-          <button onClick={()=>{
-            handleCopyPhone()
-          }}><FontAwesomeIcon icon={faCopy} size="sm" /> {phone ? 'Copied!' : 'Copy'}</button>
-         </div>
+            <div id="buttons">
+              <div>
+                  <ResumeBtn>
+                    Resume <FontAwesomeIcon icon={faFileArrowDown} />
+                  </ResumeBtn>
+              </div>
+              <div>
+                <Link to="https://github.com/samaydhawale000" target="_blank">
+                  <Button
+                    id="contact-github"
+                    icon={<FontAwesomeIcon icon={faGithub} size="lg" />}
+                  />{" "}
+                </Link>
+              </div>
+              <div>
+                <Link
+                  to="https://www.linkedin.com/in/samay-dhawale-a7a793221/"
+                  target="_blank"
+                >
+                  {" "}
+                  <Button
+                    id="contact-linkedin"
+                    icon={<FontAwesomeIcon icon={faLinkedin} size="lg" />}
+                  />
+                </Link>
+              </div>
+            </div>
 
-         <div className="copyBtnDiv">
-          <p id="contact-email"><FontAwesomeIcon icon={faEnvelope} size="sm" />  samaydhawale1@gmail.com</p>
-          <button onClick={()=>{
-            handleCopyMail();
-          }}><FontAwesomeIcon icon={faCopy} size="sm" /> {mail ? 'Copied!' : 'Copy'}</button>
-         </div>
-         </div>
-         
-       </div>
-        <img className="SamayImage"  src={samayImage2} alt="image" />
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                marginTop: "30px",
+              }}
+            >
+              <div className="copyBtnDiv" style={{ width: "42%" }}>
+                <p id="contact-phone">
+                  <FontAwesomeIcon icon={faPhoneVolume} size="sm" /> 9921695204
+                </p>
+                <button
+                  onClick={() => {
+                    handleCopyPhone();
+                  }}
+                >
+                  <FontAwesomeIcon icon={faCopy} size="sm" />{" "}
+                  {phone ? "Copied!" : "Copy"}
+                </button>
+              </div>
+
+              <div className="copyBtnDiv">
+                <p id="contact-email">
+                  <FontAwesomeIcon icon={faEnvelope} size="sm" />{" "}
+                  samaydhawale1@gmail.com
+                </p>
+                <button
+                  onClick={() => {
+                    handleCopyMail();
+                  }}
+                >
+                  <FontAwesomeIcon icon={faCopy} size="sm" />{" "}
+                  {mail ? "Copied!" : "Copy"}
+                </button>
+              </div>
+            </div>
+          </div>
+          <img className="SamayImage" src={samayImage2} alt="image" />
+        </div>
+      </div>
     </div>
-    </div>
-    
-   </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
