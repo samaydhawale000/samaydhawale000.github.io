@@ -1,4 +1,4 @@
-.SamayImage{
+.home-img{
     width: 500px;
     position: relative;
     animation-name: animateUser;
@@ -121,5 +121,5 @@ color: #002138;
   margin-right: 10%;
 }
 .AboutDiv>p{
-  font-size: larger;
+  font-size: 20px;
 }

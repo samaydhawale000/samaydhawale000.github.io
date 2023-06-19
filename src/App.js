@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from './components/NavBar';
 import Home from './Pages/Home';
 import AboutSection from './Pages/AboutSection';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <NavBar/>
       <Home/>
       <AboutSection/>
+      <Footer/>
     </div>
   );
 }

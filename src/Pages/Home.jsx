@@ -49,7 +49,7 @@ function Home() {
 
   return (
     <div>
-      <div style={{ width: "100%", height: "650px",backgroundRepeat:"no-repeat" ,backgroundImage:`url(${background})`, paddingTop:"50px", boxSizing:"border-box" }} id="home" >
+      <div style={{ width: "100%", height: "650px",backgroundRepeat:"no-repeat" ,backgroundImage:`url(${background})`, paddingTop:"50px", boxSizing:"border-box" }} id="home" class="nav-link home" >
         
         <div
           style={{
@@ -140,7 +140,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <img className="SamayImage" src={samayImage2} alt="image" />
+          <img className="home-img" src={samayImage2} alt="image"/>
         </div>
       </div>
 

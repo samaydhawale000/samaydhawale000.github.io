@@ -18,10 +18,12 @@ export default function AboutSection() {
         style={{
           background: "#001422",
           padding: "60px 6% 50px 6%",
+          boxSizing:"border-box"
         }}
         id="about"
+        class="nav-link about"
       >
-        <h1 style={{ fontSize: "38px", textAlign: "center" }}>
+        <h1 style={{ fontSize: "38px", textAlign: "center" }} class="about section">
           <FontAwesomeIcon icon={faAddressCard} size="sm" color="#007fda" />{" "}
           About Me
         </h1>
