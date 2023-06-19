@@ -26,7 +26,6 @@ export default function NavBar() {
           smooth={true}
           offset={-70}
           duration={600}
-          
         >
           <img src={logo} alt="logo" style={{ width: "200px" }} />
         </Link>
@@ -82,7 +81,7 @@ export default function NavBar() {
           <FontAwesomeIcon icon={faPhoneVolume} size="sm" /> CONTACT
         </Link>
         <div id="resumeBtn">
-          <ResumeBtn>
+          <ResumeBtn  id="resume-button-2">
             Resume <FontAwesomeIcon icon={faFileArrowDown} />
           </ResumeBtn>
         </div>

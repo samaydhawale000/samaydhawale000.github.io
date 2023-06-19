@@ -55,7 +55,7 @@ function Home() {
           style={{
             display: "flex",
             justifyContent: "space-between",
-            margin: "80px 60px 50px 100px",
+            margin: "80px 3% 50px 6%",
           }}
         >
           <div style={{ marginTop: "30px"}}>
@@ -77,7 +77,7 @@ function Home() {
 
             <div id="buttons">
               <div>
-                  <ResumeBtn>
+                  <ResumeBtn  id="resume-button-2">
                     Resume <FontAwesomeIcon icon={faFileArrowDown} />
                   </ResumeBtn>
               </div>

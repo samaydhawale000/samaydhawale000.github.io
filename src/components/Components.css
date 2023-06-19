@@ -2,10 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 60px 20px 60px;
+    padding: 16px 4% 16px 4%;
     box-sizing: border-box;
     background-color:#00121c;
-    border-bottom: 2px solid #001829;
+    box-shadow: #002b4d 0px 20px 15px -20px;
     z-index: 10;
     position: fixed;
     width: 100%;
