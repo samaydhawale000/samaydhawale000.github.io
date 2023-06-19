@@ -4,16 +4,19 @@
     align-items: center;
     padding: 20px 60px 20px 60px;
     box-sizing: border-box;
-    background-color:#00121c ;
+    background-color:#00121c;
+    border-bottom: 2px solid #001829;
     z-index: 10;
     position: fixed;
     width: 100%;
+    top: 0;
 }
 .NavLink{
     color: #fff;
     font-size: 17px;
     text-decoration: none;
     font-weight: 600;
+    cursor: pointer;
 }
 .NavLink:hover{
     color: #0092fa;

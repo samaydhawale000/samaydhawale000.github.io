@@ -49,21 +49,16 @@ function Home() {
 
   return (
     <div>
-      <div style={{ width: "100%", height: "680px" }}>
-        <img
-          className="home-img"
-          src={background}
-          alt="bgImage"
-          style={{ width: "100%" }}
-        />
+      <div style={{ width: "100%", height: "650px",backgroundRepeat:"no-repeat" ,backgroundImage:`url(${background})`, paddingTop:"50px", boxSizing:"border-box" }} id="home" >
+        
         <div
           style={{
             display: "flex",
             justifyContent: "space-between",
-            margin: "-35% 60px 50px 100px",
+            margin: "80px 60px 50px 100px",
           }}
         >
-          <div style={{ marginTop: "30px" }}>
+          <div style={{ marginTop: "30px"}}>
             <h1>Hello👋, My name is</h1>
             <h1 id="user-detail-name">Samay Subodh Dhawale</h1>
             <div
@@ -89,7 +84,7 @@ function Home() {
               <div>
                 <Link to="https://github.com/samaydhawale000" target="_blank">
                   <Button
-                    id="contact-github"
+                  id="contact-github"
                     icon={<FontAwesomeIcon icon={faGithub} size="lg" />}
                   />{" "}
                 </Link>
@@ -148,6 +143,7 @@ function Home() {
           <img className="SamayImage" src={samayImage2} alt="image" />
         </div>
       </div>
+
     </div>
   );
 }
