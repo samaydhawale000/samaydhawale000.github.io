@@ -5,7 +5,7 @@
     padding: 16px 4% 16px 4%;
     box-sizing: border-box;
     background-color:#00121c;
-    box-shadow: #002b4d 0px 20px 15px -20px;
+    box-shadow: #00345c 0px 20px 15px -20px;
     z-index: 10;
     position: fixed;
     width: 100%;
@@ -42,7 +42,7 @@
     padding: 11px 18px 11px 18px;
     transition: 0.6s;
     font-size: 19px;
-    background-color: #0095ff;
+    background-color: #00365d;
     border: 1.5px solid #0095ff;
 }
 #resumeBtn{
@@ -52,7 +52,7 @@
     width:16%;
     height:45px
 }
-.skillcard{
+.skills-card{
    width: 150px;
    border: 1px solid #003d6c ;
    text-align: center;
@@ -63,15 +63,15 @@
    transition: .2s;
    cursor: pointer;
 }
-.skillcard:hover{
+.skills-card:hover{
     border: 1px solid #005a9f ;
     transition: .2s;
     box-shadow: #004981 0px 7px 20px 0px;
  }
-.skillcard>img{
+.skills-card>img{
 height: 90px;
 }
 
-.skillcard>h3{
+.skills-card>h3{
 font-weight: 400;
 }

@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function Skillcard({image,heading}) {
   return (
-    <div className='skillcard'>
-        <img src={image} alt="image" />
-        <h3>{heading}</h3>
+    <div class="skills-card">
+        <img src={image} alt="image" class="skills-card-img"/>
+        <h3 class="skills-card-name">{heading}</h3>
     </div>
   )
 }
