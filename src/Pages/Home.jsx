@@ -49,7 +49,7 @@ function Home() {
 
   return (
     <div>
-      <div style={{ width: "100%", height: "650px",backgroundRepeat:"no-repeat" ,backgroundImage:`url(${background})`, paddingTop:"50px", boxSizing:"border-box" }} id="home" class="nav-link home" >
+      <div style={{ width: "100%", height: "700px",backgroundRepeat:"no-repeat" ,backgroundImage:`url(${background})`, paddingTop:"70px", boxSizing:"border-box" }} id="home" class="nav-link home" >
         
         <div
           style={{

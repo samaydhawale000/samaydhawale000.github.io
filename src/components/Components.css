@@ -42,7 +42,7 @@
     padding: 11px 18px 11px 18px;
     transition: 0.6s;
     font-size: 19px;
-    background-color: #002e50;
+    background-color: #0095ff;
     border: 1.5px solid #0095ff;
 }
 #resumeBtn{
@@ -51,4 +51,19 @@
     justify-content:space-around;
     width:16%;
     height:45px
+}
+.skillcard{
+   width: 150px;
+   border: 1px solid #003d6c ;
+   text-align: center;
+   border-radius: 12px;
+   padding: 20px 20px 4px 20px;
+   box-sizing: border-box;
+}
+.skillcard>img{
+height: 90px;
+}
+
+.skillcard>h3{
+font-weight: 400;
 }
