@@ -59,7 +59,15 @@
    border-radius: 12px;
    padding: 20px 20px 4px 20px;
    box-sizing: border-box;
+   box-shadow: #002540 0px 7px 20px 0px;
+   transition: .2s;
+   cursor: pointer;
 }
+.skillcard:hover{
+    border: 1px solid #005a9f ;
+    transition: .2s;
+    box-shadow: #004981 0px 7px 20px 0px;
+ }
 .skillcard>img{
 height: 90px;
 }
