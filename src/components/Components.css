@@ -60,8 +60,7 @@
    padding: 20px 20px 4px 20px;
    box-sizing: border-box;
    box-shadow: #002540 0px 7px 20px 0px;
-   transition: .2s;
-   cursor: pointer;
+   transition: .8s;
 }
 .skills-card:hover{
     border: 1px solid #005a9f ;

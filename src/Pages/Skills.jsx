@@ -13,7 +13,7 @@ export default function Skills() {
  <div
         style={{
           padding: "60px 6% 100px 6%",
-          boxSizing:"border-box"
+          boxSizing:"border-box",
         }}
         class="nav-link skills">
         <h1 style={{ fontSize: "38px", textAlign: "center", marginBottom:"60px" }} >

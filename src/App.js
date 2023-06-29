@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import AboutSection from './Pages/AboutSection';
 import Footer from './components/Footer';
 import Skills from './Pages/Skills';
+import Projects from './Pages/Projects';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Home/>
       <AboutSection/>
       <Skills/>
+      <Projects/>
       <Footer/>
     </div>
   );
