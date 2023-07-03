@@ -33,6 +33,8 @@ export default function Projects() {
           <ProjectCard title={"TechBazaar"} img={techBazaar} discription={"TECHBAZAAR is an e-commerce website for tech related products, designed to provide a user experience."} />
           <ProjectCard title={"TechBazaar"} img={techBazaar} discription={"TECHBAZAAR is an e-commerce website for tech related products, designed to provide a user experience."} />
           <ProjectCard title={"TechBazaar"} img={techBazaar} discription={"TECHBAZAAR is an e-commerce website for tech related products, designed to provide a user experience."} />
+          <ProjectCard title={"TechBazaar"} img={techBazaar} discription={"TECHBAZAAR is an e-commerce website for tech related products, designed to provide a user experience."} />
+          <ProjectCard title={"TechBazaar"} img={techBazaar} discription={"TECHBAZAAR is an e-commerce website for tech related products, designed to provide a user experience."} />
           
         </div>
       </div>
