@@ -129,3 +129,10 @@ color: #002138;
   grid-template-columns: repeat(7, 1fr);
   gap: 30px;
 }
+.projectDiv{
+  width: 90%;
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 4%;
+}

@@ -1,6 +1,7 @@
 import React from 'react'
-import coadingVector from "../images/coadingVector.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ProjectCard from '../components/ProjectCard';
+import techBazaar from "../images/techBazaarHome.png"
 import {
   faHouse,
   faFileArrowDown,
@@ -28,6 +29,10 @@ export default function Projects() {
         </h1>
 
         <div className="projectDiv">
+          <ProjectCard title={"TechBazaar"} img={techBazaar} discription={"TECHBAZAAR is an e-commerce website for tech related products, designed to provide a user experience."} />
+          <ProjectCard title={"TechBazaar"} img={techBazaar} discription={"TECHBAZAAR is an e-commerce website for tech related products, designed to provide a user experience."} />
+          <ProjectCard title={"TechBazaar"} img={techBazaar} discription={"TECHBAZAAR is an e-commerce website for tech related products, designed to provide a user experience."} />
+          <ProjectCard title={"TechBazaar"} img={techBazaar} discription={"TECHBAZAAR is an e-commerce website for tech related products, designed to provide a user experience."} />
           
         </div>
       </div>
