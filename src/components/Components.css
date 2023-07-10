@@ -74,7 +74,7 @@ height: 90px;
 .skills-card>h3{
 font-weight: 400;
 }
-.productCardDiv{
+.project-card{
     background-color: #001829;
     border-radius: 20px;
     border: 2px solid #003d6c ;
@@ -85,20 +85,29 @@ font-weight: 400;
     padding-bottom: 20px;
     transition: .8s;
 }
-.productCardDiv:hover{
+.project-card:hover{
     border: 2px solid #005a9f ;
     transition: .2s;
     box-shadow: #004981 0px 7px 20px 0px;
 }
-.productCardDiv>img{
+.project-card>img{
     width: 100%;
-    height: 220px;
+    height: 300px;
     margin: auto;
     border-radius: 18px 18px 0px 0px;
 }
-.productCardDiv>div>h2{
+.project-card>div>h2{
     margin-left: 20px;
 }
-.productCardDiv>div>p{
+.project-card>div>p{
     margin-left: 20px;
+    margin-right: 20px;
+}
+
+.btnDiv{
+    margin: 30px 20px 10px 20px;
+    align-items: center;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
 }
