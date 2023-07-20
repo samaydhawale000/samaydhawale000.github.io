@@ -69,14 +69,14 @@ export default function NavBar() {
             duration={600}>
           <FontAwesomeIcon icon={faBriefcase} size="sm" /> PROJECTS
         </Link>
-        <Link class="nav-link contact" className="NavLink" to={"github"}  spy={true}
+        <Link className="NavLink" to={"github"}  spy={true}
             smooth={true}
             offset={-70}
             duration={600}>
           {" "}
           <FontAwesomeIcon icon={faGithub} /> GITHUB
         </Link>
-        <Link class="navLink" className="NavLink" to={"contact"}  spy={true}
+        <Link class="nav-link contact" className="NavLink" to={"contact"}  spy={true}
             smooth={true}
             offset={-70}
             duration={600}>

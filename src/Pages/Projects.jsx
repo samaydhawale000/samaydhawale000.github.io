@@ -30,14 +30,9 @@ import portfolio3 from "../images/portfolio3.png";
 import portfolio4 from "../images/portfolio4.png";
 
 import {
-  faHouse,
-  faFileArrowDown,
-  faAddressCard,
   faBriefcase,
-  faCode,
-  faPhoneVolume,
 } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+
 
 export default function Projects() {
   return (
