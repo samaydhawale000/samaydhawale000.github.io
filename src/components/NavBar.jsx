@@ -69,7 +69,10 @@ export default function NavBar() {
             duration={600}>
           <FontAwesomeIcon icon={faBriefcase} size="sm" /> PROJECTS
         </Link>
-        <Link class="nav-link contact" className="NavLink">
+        <Link class="nav-link contact" className="NavLink" to={"github"}  spy={true}
+            smooth={true}
+            offset={-70}
+            duration={600}>
           {" "}
           <FontAwesomeIcon icon={faGithub} /> GITHUB
         </Link>
@@ -80,7 +83,7 @@ export default function NavBar() {
           {" "}
           <FontAwesomeIcon icon={faPhoneVolume} size="sm" /> CONTACT
         </Link>
-        <div id="resumeBtn">
+        <div id="resumeBtn" class="nav-link resume">
           <ResumeBtn  id="resume-button-2">
             Resume <FontAwesomeIcon icon={faFileArrowDown} />
           </ResumeBtn>

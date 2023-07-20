@@ -6,6 +6,7 @@ import AboutSection from './Pages/AboutSection';
 import Footer from './components/Footer';
 import Skills from './Pages/Skills';
 import Projects from './Pages/Projects';
+import Github from './Pages/Github';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <AboutSection/>
       <Skills/>
       <Projects/>
+      <Github/>
       <Footer/>
     </div>
   );
