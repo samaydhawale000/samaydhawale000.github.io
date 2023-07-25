@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6df10d5d.css",
-    "main.js": "/static/js/main.8a959c88.js",
+    "main.css": "/static/css/main.ae28afde.css",
+    "main.js": "/static/js/main.5e07ef4e.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/stylio.png": "/static/media/stylio.4fee81131bd9c8146c58.png",
     "static/media/samayImage2.png": "/static/media/samayImage2.7bf099f757f01862f005.png",
@@ -25,6 +25,7 @@
     "static/media/sd2.png": "/static/media/sd2.6f640e3318953fafd0b7.png",
     "static/media/coadingVector.png": "/static/media/coadingVector.fff9beeaf0dd3c47def1.png",
     "static/media/portfolio3.png": "/static/media/portfolio3.d26ffd78637a41374d36.png",
+    "static/media/contactImg.jpg": "/static/media/contactImg.13b798d6ec4d62e3e4d2.jpg",
     "static/media/sd3.png": "/static/media/sd3.7c904645e735ea1387ee.png",
     "static/media/stylio5.png": "/static/media/stylio5.59edb88421540ff8b53c.png",
     "static/media/downhill5.png": "/static/media/downhill5.bc680bd7d37a0c2acfd0.png",
@@ -39,12 +40,12 @@
     "static/media/github.png": "/static/media/github.987334e9f782cc505f25.png",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.6df10d5d.css.map": "/static/css/main.6df10d5d.css.map",
-    "main.8a959c88.js.map": "/static/js/main.8a959c88.js.map",
+    "main.ae28afde.css.map": "/static/css/main.ae28afde.css.map",
+    "main.5e07ef4e.js.map": "/static/js/main.5e07ef4e.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6df10d5d.css",
-    "static/js/main.8a959c88.js"
+    "static/css/main.ae28afde.css",
+    "static/js/main.5e07ef4e.js"
   ]
 }
