@@ -38,7 +38,7 @@ const [image,setImage] = useState(img[0])
         <p  class="project-tech-stack"><span style={{color:"#007fda", fontWeight:"bold"}}>Tech stack:</span> {tech}</p>
         <div className="btnDiv">
           
-          <Link to={gitpath} target="_blank"  style={{textDecoration:"none"}} class=".project-github-link" >
+          <Link to={gitpath} target="_blank"  style={{textDecoration:"none"}} class="project-github-link" >
           <Button text={"Gitbub"} icon={<FontAwesomeIcon icon={faGithub} size="md" />}/>
           </Link>
           <Link to={webpath} target="_blank"  style={{textDecoration:"none"}} class="project-deployed-link">

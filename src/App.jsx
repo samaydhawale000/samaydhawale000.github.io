@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Skills from './Pages/Skills';
 import Projects from './Pages/Projects';
 import Github from './Pages/Github';
+import Contact from './Pages/Contact';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Skills/>
       <Projects/>
       <Github/>
+    <Contact/>
       <Footer/>
     </div>
   );

@@ -1,15 +1,15 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import GitHubCalendar from 'react-github-calendar';
+import GitHubCalendar from "react-github-calendar";
 
 export default function Github() {
   const username = "samaydhawale000";
   const theme = {
     light: ["hsl(0, 0%, 92%)", "rebeccapurple"],
-    dark: ["hsl(0, 0%, 22%)", "#007fda"]         
+    dark: ["#002036", "#0093fc"],
   };
-  
+
   GitHubCalendar("#github-calendar", username, { theme });
   return (
     <div>
@@ -33,13 +33,35 @@ export default function Github() {
           Github Statistics
         </h1>
 
-        <div>
-            <img src="https://github-readme-streak-stats.herokuapp.com?user=samaydhawale000&theme=transparent" alt="img" />
-            <img src="https://github-readme-stats.vercel.app/api?username=samaydhawale000&show_icons=true&theme=transparent" alt="img" />
-            <img src="https://github-readme-stats.vercel.app/api?username=samaydhawale000&show_icons=true&theme=transparent" alt="img" />
-            <GitHubCalendar username={username} theme={theme} />
+        <div className="github-calendar-container">
+            <GitHubCalendar
+              id="github-stats-card"
+              username={username}
+              theme={theme}
+            />
+          </div>
+        <div className="githubDiv">
+
+          <img
+            id="github-streak-stats"
+            src="https://github-readme-streak-stats.herokuapp.com?user=samaydhawale000&theme=transparent"
+            alt="img"
+            style={{width:"100%"}}
+          />
+          <img
+            id="github-stats-card"
+            src="https://github-readme-stats.vercel.app/api?username=samaydhawale000&show_icons=true&theme=transparent"
+            alt="img"
+            style={{width:"96%"}}
+          />
+          <img
+            id="github-top-langs"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=samaydhawale000&layout=compact&theme=transparent"
+            alt="img"
+            style={{width:"86%"}}
+          />
         </div>
       </div>
     </div>
-  )
+  );
 }

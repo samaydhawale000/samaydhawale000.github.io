@@ -7,7 +7,7 @@ import {
 
 export default function AboutSection() {
   return (
-    <div >
+    <div id="about" >
       <div
         style={{
           background: "#001422",
@@ -16,7 +16,7 @@ export default function AboutSection() {
         }}
         class="nav-link about">
           
-        <h1 style={{ fontSize: "38px", textAlign: "center" }} id="about" class="about section">
+        <h1 style={{ fontSize: "38px", textAlign: "center" }} class="about section">
           <FontAwesomeIcon icon={faAddressCard} size="sm" color="#007fda" />{" "}
           About Me
         </h1>

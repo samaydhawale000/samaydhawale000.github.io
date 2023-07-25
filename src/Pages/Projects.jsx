@@ -137,11 +137,11 @@ export default function Projects() {
             gitpath={
               "https://github.com/samaydhawale000/samaydhawale000.github.io"
             }
-            tech={"React js | CSS | JavaScript | Chakra UI | Json Server"}
-            title={"TechBazaar"}
+            tech={"React js | CSS | JavaScript | Chakra UI | NodeJS | MongoDB | ExpressJS"}
+            title={"MusicMix"}
             img={[techBazaar, tech1, tech3, tech4, tech2]}
             discription={
-              "TECHBAZAAR is an e-commerce website for tech related products, designed to provide a user experience."
+              "MusicMix is an impressive Spotify clone, designed to offer a great user experience and Awesome Music Experiences for users."
             }
           />
         </div>

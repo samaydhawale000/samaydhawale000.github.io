@@ -14,6 +14,7 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ResumeBtn from "../components/ResumeBtn";
+import resume from "../Resume/resume.pdf"
 
 function Home() {
   const [phone, setPhone] = useState(false);
@@ -49,8 +50,18 @@ function Home() {
 
   return (
     <div>
-      <div style={{ width: "100%", height: "700px",backgroundRepeat:"no-repeat" ,backgroundImage:`url(${background})`, paddingTop:"70px", boxSizing:"border-box" }} id="home" class="nav-link home" >
-        
+      <div
+        style={{
+          width: "100%",
+          height: "700px",
+          backgroundRepeat: "no-repeat",
+          backgroundImage: `url(${background})`,
+          paddingTop: "70px",
+          boxSizing: "border-box",
+        }}
+        id="home"
+        class="nav-link home"
+      >
         <div
           style={{
             display: "flex",
@@ -58,7 +69,7 @@ function Home() {
             margin: "80px 3% 50px 6%",
           }}
         >
-          <div style={{ marginTop: "30px"}}>
+          <div style={{ marginTop: "30px" }}>
             <h1>Hello👋, My name is</h1>
             <h1 id="user-detail-name">Samay Subodh Dhawale</h1>
             <div
@@ -77,14 +88,20 @@ function Home() {
 
             <div id="buttons">
               <div>
-                  <ResumeBtn  id="resume-button-2">
+                <a
+                  href={resume}
+                  download="Samay-Dhawale-Resume"
+                  style={{ textDecoration: "none" }}
+                >
+                  <ResumeBtn id="resume-button-2">
                     Resume <FontAwesomeIcon icon={faFileArrowDown} />
                   </ResumeBtn>
+                </a>
               </div>
               <div>
                 <Link to="https://github.com/samaydhawale000" target="_blank">
                   <Button
-                  id="contact-github"
+                    id="contact-github"
                     icon={<FontAwesomeIcon icon={faGithub} size="lg" />}
                   />{" "}
                 </Link>
@@ -140,10 +157,9 @@ function Home() {
               </div>
             </div>
           </div>
-          <img className="home-img" src={samayImage2} alt="image"/>
+          <img className="home-img" src={samayImage2} alt="image" />
         </div>
       </div>
-
     </div>
   );
 }
