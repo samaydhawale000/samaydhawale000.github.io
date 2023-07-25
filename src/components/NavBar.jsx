@@ -86,7 +86,7 @@ export default function NavBar() {
         </Link>
         <div id="resumeBtn" class="nav-link resume">
 
-        <a href={resume} download="Samay-Dhawale-Resume" style={{textDecoration:"none"}}>
+        <a href={resume} download="Samay-Dhawale-Resume" id="resume-link-1" style={{textDecoration:"none"}}>
         <ResumeBtn  id="resume-button-1">
             Resume <FontAwesomeIcon icon={faFileArrowDown} />
           </ResumeBtn>

@@ -23,7 +23,7 @@
     text-decoration: underline; 
 }
 
-#btn{
+.btn{
     padding: 9px 16px 9px 16px;
     font-size: 18px;
     background-color: #007fda;
@@ -38,7 +38,7 @@
 }
 
 
-#btn:hover{
+.btn:hover{
     padding: 11px 18px 11px 18px;
     transition: 0.6s;
     font-size: 19px;

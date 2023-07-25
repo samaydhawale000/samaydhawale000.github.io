@@ -10,7 +10,7 @@ export default function ResumeBtn({ children }) {
     <div>
       <div>
         <button
-          id="btn"
+          className="btn"
           style={{ width: "122px" }}
           onMouseEnter={(e) => (e.target.style.width = "128px")}
           onClick={OpenTab}

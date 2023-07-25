@@ -28,6 +28,9 @@ import sd3 from "../images/sd3.png";
 import portfolio1 from "../images/portfolio1.png";
 import portfolio3 from "../images/portfolio3.png";
 import portfolio4 from "../images/portfolio4.png";
+import musicMix1 from "../images/musicMix1.png";
+import musicMix2 from "../images/musicMix2.png";
+import musicMix3 from "../images/musicMix3.png";
 
 import {
   faBriefcase,
@@ -36,19 +39,17 @@ import {
 
 export default function Projects() {
   return (
-    <div>
+    <div id="projects"
+    class="nav-link projects">
       <div
         style={{
           background: "#001422",
           padding: "60px 6% 50px 6%",
           boxSizing: "border-box",
         }}
-        id="projects"
-        class="nav-link projects"
       >
         <h1
           style={{ fontSize: "38px", textAlign: "center" }}
-          class="about section"
         >
           <FontAwesomeIcon icon={faBriefcase} size="sm" color="#007fda" /> My
           Projects
@@ -139,7 +140,7 @@ export default function Projects() {
             }
             tech={"React js | CSS | JavaScript | Chakra UI | NodeJS | MongoDB | ExpressJS"}
             title={"MusicMix"}
-            img={[techBazaar, tech1, tech3, tech4, tech2]}
+            img={[musicMix1, musicMix2, musicMix3]}
             discription={
               "MusicMix is an impressive Spotify clone, designed to offer a great user experience and Awesome Music Experiences for users."
             }

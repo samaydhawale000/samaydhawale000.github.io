@@ -92,6 +92,7 @@ function Home() {
                   href={resume}
                   download="Samay-Dhawale-Resume"
                   style={{ textDecoration: "none" }}
+                  id="resume-link-2"
                 >
                   <ResumeBtn id="resume-button-2">
                     Resume <FontAwesomeIcon icon={faFileArrowDown} />

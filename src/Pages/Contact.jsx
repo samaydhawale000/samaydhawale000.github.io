@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import contactImg from "../images/contactImg.jpg";
+import contactImg from "../images/contactImg.gif";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faPhoneVolume,
@@ -108,12 +108,13 @@ export default function Contact() {
                 </button>
               </div>
             </div>
-              <div id="buttons">
+              <div id="buttons" style={{marginLeft:"-2px"}}>
               <div>
                 <a
                   href={resume}
                   download="Samay-Dhawale-Resume"
                   style={{ textDecoration: "none" }}
+                  id="resume-link-2"
                 >
                   <ResumeBtn id="resume-button-2">
                     Resume <FontAwesomeIcon icon={faFileArrowDown} />
@@ -121,9 +122,9 @@ export default function Contact() {
                 </a>
               </div>
               <div>
-                <Link to="https://github.com/samaydhawale000" target="_blank">
+                   
+                <Link  id="contact-github" to="https://github.com/samaydhawale000" target="_blank">
                   <Button
-                     id="contact-github"
                     icon={<FontAwesomeIcon icon={faGithub} size="lg" />}
                   />{" "}
                 </Link>
@@ -132,10 +133,10 @@ export default function Contact() {
                 <Link
                   to="https://www.linkedin.com/in/samay-dhawale-a7a793221/"
                   target="_blank"
+                  id="contact-linkedin"
                 >
                   {" "}
                   <Button
-                    id="contact-linkedin"
                     icon={<FontAwesomeIcon icon={faLinkedin} size="lg" />}
                   />
                 </Link>

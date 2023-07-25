@@ -9,13 +9,14 @@ import express from "../images/express.png"
 
 export default function Skills() {
   return (
-    <div id="skills">
+    <div >
  <div
         style={{
           padding: "60px 6% 100px 6%",
           boxSizing:"border-box",
         }}
-        class="nav-link skills">
+        id="skills" class="nav-link skills"
+        >
         <h1 style={{ fontSize: "38px", textAlign: "center", marginBottom:"60px" }} >
           <FontAwesomeIcon icon={faCode} size="sm" color="#007fda" />{"  "}
           Technical Skills
