@@ -1,60 +1,92 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from "react";
 import contactImg from "../images/contactImg.gif";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-    faPhoneVolume,
-    faFileArrowDown,
+  faPhoneVolume,
+  faFileArrowDown,
   faEnvelope,
   faCopy,
+  faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import Button from '../components/Button';
-import ResumeBtn from '../components/ResumeBtn';
-import resume from "../Resume/resume.pdf"
+import Button from "../components/Button";
+import ResumeBtn from "../components/ResumeBtn";
+import resume from "../Resume/resume.pdf";
+import emailjs from "emailjs-com";
+import Swal from 'sweetalert2'
 
 export default function Contact() {
-    const [phone, setPhone] = useState(false);
-    const [mail, setMail] = useState(false);
-  
-    const handleCopyPhone = () => {
-      navigator.clipboard.writeText("9921695204");
-      setPhone(true);
-    };
-  
-    const handleCopyMail = () => {
-      // Copy the desired text to the clipboard
-      navigator.clipboard.writeText("samaydhawale1@gmail.com");
-      setMail(true);
-    };
-  
-    useEffect(() => {
-      let timeoutId;
-  
-      if (phone) {
-        timeoutId = setTimeout(() => {
-          setPhone(false);
-        }, 1500);
-      }
-      if (mail) {
-        timeoutId = setTimeout(() => {
-          setMail(false);
-        }, 1500);
-      }
-  
-      return () => clearTimeout(timeoutId);
-    }, [mail, phone]);
+  const [phone, setPhone] = useState(false);
+  const [mail, setMail] = useState(false);
+  const [flag, setFlag] = useState(false);
+  const [name, setName] = useState("");
+  const form = useRef();
+
+  const handleCopyPhone = () => {
+    navigator.clipboard.writeText("9921695204");
+    setPhone(true);
+  };
+
+  const handleCopyMail = () => {
+    // Copy the desired text to the clipboard
+    navigator.clipboard.writeText("samaydhawale1@gmail.com");
+    setMail(true);
+  };
+
+  useEffect(() => {
+    let timeoutId;
+
+    if (phone) {
+      timeoutId = setTimeout(() => {
+        setPhone(false);
+      }, 1500);
+    }
+    if (mail) {
+      timeoutId = setTimeout(() => {
+        setMail(false);
+      }, 1500);
+    }
+
+    return () => clearTimeout(timeoutId);
+  }, [mail, phone]);
+
+  const handleSend = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_0122auk",
+        "template_17akjuz",
+        form.current,
+        "plZjZFpcNGOUy8NR4"
+      )
+      .then(
+        (result) => {
+          console.log("Email sent successfully!", result.text)
+          Swal.fire(
+            `Hey ${name}`,
+            `Your email sent successfully!`,
+            'success'
+          )
+        },
+        (error) => {
+          console.log("Failed to send email:", error.text);
+        }
+      );
+  };
+
   return (
     <div id="contact">
-        <div
+      <div
         style={{
           background: "#001422",
           padding: "60px 8% 100px 8%",
-          boxSizing:"border-box",
+          boxSizing: "border-box",
         }}
-        class="nav-link contact">
-          
-        <h1 style={{ fontSize: "38px", textAlign: "center" }} >
+        class="nav-link contact"
+      >
+        <h1 style={{ fontSize: "38px", textAlign: "center" }}>
           <FontAwesomeIcon icon={faPhoneVolume} size="sm" color="#007fda" />{" "}
           Contact Me
         </h1>
@@ -62,25 +94,47 @@ export default function Contact() {
         <div className="contactDiv">
           <img src={contactImg} alt="image" />
           <div>
-            <h2>Get In Touch</h2>
-            <input type="text" placeholder='Full Name' />
-            <input type="text" placeholder='Email'/>
-            <input type="Text" placeholder='Phone Number'/>
-            <input type="text" placeholder='Write your Massage'/>
-            <div style={{height:"40px",marginBottom:"40px",display:"flex", alignItems:"flex-start" }}>
-            <Button text={"Submit"} />
-            </div>
-
+            <h2>Feel free to connect with me</h2>
+            <form ref={form} onSubmit={handleSend}>
+              <input
+                type="text"
+                placeholder="Full Name"
+                name="name"
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
+              />
+              <input type="text" placeholder="Email" name="email" />
+              <input type="Text" placeholder="Phone Number" name="number" />
+              <input
+                type="text"
+                placeholder="Write your Massage"
+                name="message"
+              />
+              <div
+                style={{
+                  height: "40px",
+                  marginBottom: "40px",
+                  display: "flex",
+                  alignItems: "flex-start",
+                }}
+              >
+                <Button
+                  text={"Send"}
+                  icon={<FontAwesomeIcon size="sm" icon={faPaperPlane} />}
+                />
+              </div>
+            </form>
             <div
               style={{
                 display: "flex",
                 justifyContent: "space-between",
                 marginTop: "30px",
-                marginBottom:"30px"
+                marginBottom: "30px",
               }}
             >
               <div className="copyBtnDiv" style={{ width: "42%" }}>
-                <p  id="contact-phone">
+                <p id="contact-phone">
                   <FontAwesomeIcon icon={faPhoneVolume} size="sm" /> 9921695204
                 </p>
                 <button
@@ -108,7 +162,7 @@ export default function Contact() {
                 </button>
               </div>
             </div>
-              <div id="buttons" style={{marginLeft:"-2px"}}>
+            <div id="buttons" style={{ marginLeft: "-2px" }}>
               <div>
                 <a
                   href={resume}
@@ -122,8 +176,11 @@ export default function Contact() {
                 </a>
               </div>
               <div>
-                   
-                <Link  id="contact-github" to="https://github.com/samaydhawale000" target="_blank">
+                <Link
+                  id="contact-github"
+                  to="https://github.com/samaydhawale000"
+                  target="_blank"
+                >
                   <Button
                     icon={<FontAwesomeIcon icon={faGithub} size="lg" />}
                   />{" "}
@@ -143,9 +200,8 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </div>
-  )
+  );
 }
