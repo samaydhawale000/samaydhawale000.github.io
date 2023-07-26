@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import contactImg from "../images/contactImg.gif";
+import contactImg from "../images/contactImg.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPhoneVolume,
