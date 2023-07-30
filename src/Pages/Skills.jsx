@@ -14,6 +14,7 @@ export default function Skills() {
         style={{
           padding: "60px 6% 100px 6%",
           boxSizing:"border-box",
+          width:"100%"
         }}
         id="skills" class="nav-link skills"
         >

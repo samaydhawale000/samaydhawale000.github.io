@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import contactImg from "../images/contactImg.png";
+import contactImg from "../images/contactImg.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPhoneVolume,
@@ -126,14 +126,10 @@ export default function Contact() {
               </div>
             </form>
             <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                marginTop: "30px",
-                marginBottom: "30px",
-              }}
+              className="contactCopybtn"
+              style={{width:"100%"}}
             >
-              <div className="copyBtnDiv" style={{ width: "42%" }}>
+              <div className="copyBtnDiv" style={{ width: "350px", marginBottom:"20px" }}>
                 <p id="contact-phone">
                   <FontAwesomeIcon icon={faPhoneVolume} size="sm" /> 9921695204
                 </p>
@@ -147,7 +143,7 @@ export default function Contact() {
                 </button>
               </div>
 
-              <div className="copyBtnDiv">
+              <div className="copyBtnDiv" style={{ width: "350px" }}>
                 <p id="contact-email">
                   <FontAwesomeIcon icon={faEnvelope} size="sm" />{" "}
                   samaydhawale1@gmail.com

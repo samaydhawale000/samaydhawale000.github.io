@@ -32,12 +32,8 @@ export default function NavBar() {
         </Link>
       
       <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          width: "800px",
-          alignItems: "center",
-        }}
+
+        className="navAllLinksDiv"
       >
         <Link
           class="nav-link home"
@@ -93,6 +89,7 @@ export default function NavBar() {
        </a>
           
         </div>
+
       </div>
     </div>
   );

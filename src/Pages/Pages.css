@@ -1,5 +1,6 @@
 .home-img{
     width: 500px;
+    height: 480px;
     position: relative;
     animation-name: animateUser;
     animation-duration: 5s;
@@ -64,7 +65,7 @@ color: #002138;
   display: flex;
   margin-top: 20px;
   justify-content: space-between;
-  width: 40%;
+  width: 260px;
   margin-left: -1%;
   height:40px;
   align-items:center
@@ -128,6 +129,7 @@ color: #002138;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 30px;
+  width: 100%;
 }
 .projectDiv{
   margin: 60px auto;
@@ -158,8 +160,7 @@ color: #002138;
 }
 
 .contactDiv>img{
-  width: 36%;
-  border-radius: 50%;
+  width: 36%
 }
 .contactDiv>div{
   width: 50%;
@@ -176,7 +177,56 @@ color: #002138;
   font-size: 16px;
 }
 
+.contactCopybtn{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
 .contactDiv>div>form>input::placeholder{
   color:#4e6d85;
   background:transparent ;
+}
+
+.homeCopybtnDiv{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px
+}
+
+@media screen and (min-width: 1200px) and (max-width:1391px){
+  #user-detail-name{
+    font-size: 48px;
+  }
+  .hello{
+    font-size: 28px;
+  }
+  .roleHeading{
+    font-size: 26px;
+  }
+  #designation{
+    font-size: 26px;
+  }
+  .home-img{
+    width:440px;
+    height: 420px;
+  }
+  .homeCopybtnDiv{
+    flex-direction: column;
+    width: 660px;
+  }
+
+  .contactCopybtn{
+    flex-direction: column;
+    width: 660px
+  }
+
+  .AboutDiv>img{
+    height: 260px;
+  }
+  .AboutDiv>p{
+    font-size: 19px;
+  }
 }

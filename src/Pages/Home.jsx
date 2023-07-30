@@ -1,7 +1,7 @@
 import React from "react";
 import samayImage2 from "../images/samayImage2.png";
 import "./Pages.css";
-import background from "../images/background.jpg";
+import background from "../images/background.svg";
 import Button from "../components/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -67,20 +67,20 @@ function Home() {
             display: "flex",
             justifyContent: "space-between",
             margin: "80px 3% 50px 6%",
+      
           }}
         >
-          <div style={{ marginTop: "30px" }}>
-            <h1>Hello👋, My name is</h1>
+          <div style={{ marginTop: "30px",width:"50%" }}>
+            <h1 className="hello">Hello👋, My name is</h1>
             <h1 id="user-detail-name">Samay Subodh Dhawale</h1>
             <div
               style={{
                 display: "flex",
-                width: "80%",
-                justifyContent: "space-between",
+                width: "100%",
                 alignItems: "baseline",
               }}
             >
-              <h1>I am a</h1>
+              <h1 className="roleHeading" style={{marginRight:"4px"}}>I am a</h1>
               <h1 data-text="Full Stack Web Developer" id="designation">
                 Full Stack Web Developer
               </h1>
@@ -127,8 +127,9 @@ function Home() {
                 justifyContent: "space-between",
                 marginTop: "30px",
               }}
+              className="homeCopybtnDiv"
             >
-              <div className="copyBtnDiv" style={{ width: "42%" }}>
+              <div className="copyBtnDiv" style={{ width: "42%", marginBottom:"20px" }}>
                 <p id="contact-phone">
                   <FontAwesomeIcon icon={faPhoneVolume} size="sm" /> 9921695204
                 </p>

@@ -53,7 +53,6 @@
     height:45px
 }
 .skills-card{
-   width: 150px;
    border: 1px solid #003d6c ;
    text-align: center;
    border-radius: 12px;
@@ -111,4 +110,16 @@ font-weight: 400;
     display: flex;
     height: 50px;
     justify-content: space-between;
+}
+.navAllLinksDiv{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    align-items: center;
+}
+
+@media screen and (min-width: 0px) and (max-width:1199px){
+.navAllLinksDiv{
+    display: none;
+}
 }
