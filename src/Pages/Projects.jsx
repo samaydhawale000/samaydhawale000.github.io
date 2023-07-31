@@ -87,6 +87,20 @@ export default function Projects() {
               "Downhill is an e-commerce site for skateboard products, designed with a focus on providing a great user experience."
             }
           />
+          
+          <ProjectCard
+            webpath={"samaydhawale000.github.io/"}
+            gitpath={
+              "https://github.com/samaydhawale000/samaydhawale000.github.io"
+            }
+            tech={"React js | CSS | JavaScript | Chakra UI | NodeJS | MongoDB | ExpressJS"}
+            title={"MusicMix"}
+            img={[musicMix1, musicMix2, musicMix3]}
+            discription={
+              "MusicMix is an impressive Spotify clone, designed to offer a great user experience and Awesome Music Experiences for users."
+            }
+          />
+
           <ProjectCard
             webpath={"https://stylio.netlify.app/index.html"}
             gitpath={
@@ -133,18 +147,7 @@ export default function Projects() {
               "This portfolio website demonstrates my impressive work and features, a fully responsive website and build from scratch. it showcases my skills effectively."
             }
           />
-          <ProjectCard
-            webpath={"samaydhawale000.github.io/"}
-            gitpath={
-              "https://github.com/samaydhawale000/samaydhawale000.github.io"
-            }
-            tech={"React js | CSS | JavaScript | Chakra UI | NodeJS | MongoDB | ExpressJS"}
-            title={"MusicMix"}
-            img={[musicMix1, musicMix2, musicMix3]}
-            discription={
-              "MusicMix is an impressive Spotify clone, designed to offer a great user experience and Awesome Music Experiences for users."
-            }
-          />
+          
         </div>
       </div>
     </div>
