@@ -237,3 +237,10 @@
     font-size: 12px;
   }
 }
+
+
+@media screen and (min-width: 280px) and (max-width: 340px) {
+    .project-card > img {
+        height: 150px;
+      }
+}

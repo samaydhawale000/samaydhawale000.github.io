@@ -702,13 +702,17 @@
   }
 
   .contactDiv > img {
-    width: 50%;
+    width: 65%;
   }
   #buttons {
     width: 245px;
   }
   .projectDiv {
     grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .contactDiv > div>h2 {
+    font-size: 20px;
   }
 }
 
@@ -738,6 +742,9 @@
   .home {
     height: 780px;
     padding-top: 100px;
+  }
+  .contactDiv > div>h2 {
+    font-size: 18px;
   }
 
   .home-img {
@@ -815,7 +822,7 @@
   }
 
   .contactDiv > img {
-    width: 50%;
+    width: 65%;
   }
   #buttons {
     width: 245px;
