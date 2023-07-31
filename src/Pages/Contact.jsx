@@ -86,7 +86,7 @@ export default function Contact() {
         }}
         class="nav-link contact"
       >
-        <h1 style={{ fontSize: "38px", textAlign: "center" }}>
+        <h1 className='pagesHeading'>
           <FontAwesomeIcon icon={faPhoneVolume} size="sm" color="#007fda" />{" "}
           Contact Me
         </h1>
@@ -129,11 +129,12 @@ export default function Contact() {
               className="contactCopybtn"
               style={{width:"100%"}}
             >
-              <div className="copyBtnDiv" style={{ width: "350px", marginBottom:"20px" }}>
+              <div className="copyBtnDiv" style={{ width: "220px", marginBottom:"20px" }}>
                 <p id="contact-phone">
                   <FontAwesomeIcon icon={faPhoneVolume} size="sm" /> 9921695204
                 </p>
                 <button
+                className="copybtntextcss"
                   onClick={() => {
                     handleCopyPhone();
                   }}
@@ -143,12 +144,13 @@ export default function Contact() {
                 </button>
               </div>
 
-              <div className="copyBtnDiv" style={{ width: "350px" }}>
+              <div className="copyBtnDiv" >
                 <p id="contact-email">
                   <FontAwesomeIcon icon={faEnvelope} size="sm" />{" "}
                   samaydhawale1@gmail.com
                 </p>
                 <button
+                className="copybtntextcss"
                   onClick={() => {
                     handleCopyMail();
                   }}

@@ -22,11 +22,7 @@ export default function Github() {
         id="github"
       >
         <h1
-          style={{
-            fontSize: "38px",
-            textAlign: "center",
-            marginBottom: "60px",
-          }}
+          className='pagesHeading'
         >
           <FontAwesomeIcon icon={faGithub} size="sm" color="#007fda" />
           {"  "}

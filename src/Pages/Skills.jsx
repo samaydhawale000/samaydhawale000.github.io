@@ -18,7 +18,7 @@ export default function Skills() {
         }}
         id="skills" class="nav-link skills"
         >
-        <h1 style={{ fontSize: "38px", textAlign: "center", marginBottom:"60px" }} >
+        <h1 className='pagesHeading' >
           <FontAwesomeIcon icon={faCode} size="sm" color="#007fda" />{"  "}
           Technical Skills
         </h1>

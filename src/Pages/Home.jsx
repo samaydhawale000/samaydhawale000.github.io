@@ -52,12 +52,8 @@ function Home() {
     <div>
       <div
         style={{
-          width: "100%",
-          height: "700px",
           backgroundRepeat: "no-repeat",
           backgroundImage: `url(${background})`,
-          paddingTop: "70px",
-          boxSizing: "border-box",
         }}
         id="home"
         class="nav-link home"
@@ -66,11 +62,10 @@ function Home() {
           style={{
             display: "flex",
             justifyContent: "space-between",
-            margin: "80px 3% 50px 6%",
-      
           }}
+          className="homeMainDiv"
         >
-          <div style={{ marginTop: "30px",width:"50%" }}>
+          <div className="homeNameDiv">
             <h1 className="hello">Hello👋, My name is</h1>
             <h1 id="user-detail-name">Samay Subodh Dhawale</h1>
             <div
@@ -129,11 +124,12 @@ function Home() {
               }}
               className="homeCopybtnDiv"
             >
-              <div className="copyBtnDiv" style={{ width: "42%", marginBottom:"20px" }}>
+              <div className="copyBtnDiv" style={{ width: "230px", marginBottom:"20px" }}>
                 <p id="contact-phone">
                   <FontAwesomeIcon icon={faPhoneVolume} size="sm" /> 9921695204
                 </p>
                 <button
+                className="copybtntextcss"
                   onClick={() => {
                     handleCopyPhone();
                   }}
@@ -149,6 +145,7 @@ function Home() {
                   samaydhawale1@gmail.com
                 </p>
                 <button
+                className="copybtntextcss"
                   onClick={() => {
                     handleCopyMail();
                   }}

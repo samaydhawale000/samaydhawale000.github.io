@@ -1,232 +1,826 @@
-.home-img{
-    width: 500px;
-    height: 480px;
-    position: relative;
-    animation-name: animateUser;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+.home-img {
+  width: 500px;
+  height: 480px;
+  position: relative;
+  animation-name: animateUser;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
-
-@keyframes animateUser{
-   0%{
+@keyframes animateUser {
+  0% {
     margin-top: 10px;
-   
-   }
-   50%{
+  }
+  50% {
     margin-top: -25px;
     margin-right: 20px;
-   }
-    100%{
-      margin-top: 10px;
-    }
+  }
+  100% {
+    margin-top: 10px;
+  }
 }
 
-
-#user-detail-name{
+#user-detail-name {
   margin: 0px;
-font-size: 56px;
-color: #ffffff;
+  font-size: 56px;
+  color: #ffffff;
 }
 
-#designation{
-position: relative;
-font-size: 34px;
-color: #002138;
--webkit-text-stroke: 0.5px #007fda;;
+#designation {
+  position: relative;
+  font-size: 34px;
+  color: #002138;
+  -webkit-text-stroke: 0.5px #007fda;
 }
-#designation::before{
+#designation::before {
   content: attr(data-text);
   position: absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   color: #007fda;
   -webkit-text-stroke: 0px #007fda;
-  border-right: 2px solid #007fda ;
+  border-right: 2px solid #007fda;
   overflow: hidden;
   animation: animation 6s linear infinite;
 }
-@keyframes animation{
-  0%,10%,100%{
-    width :0%
+@keyframes animation {
+  0%,
+  10%,
+  100% {
+    width: 0%;
   }
-  70%,80%{
-    width :100%
+  70%,
+  80% {
+    width: 100%;
   }
 }
-#home-img{
-  width:100%;
- position: relative;
+#home-img {
+  width: 100%;
+  position: relative;
 }
 
-#buttons{
+#buttons {
   display: flex;
   margin-top: 20px;
   justify-content: space-between;
   width: 260px;
   margin-left: -1%;
-  height:40px;
-  align-items:center
+  height: 40px;
+  align-items: center;
 }
 
-#buttons>:nth-child(1){
+#buttons > :nth-child(1) {
   width: 52%;
 }
 
-#buttons>div{
+#buttons > div {
   width: 22%;
 }
 
-#buttons>div>button{
+#buttons > div > button {
   display: block;
   margin: auto;
 }
 
-.copyBtnDiv{
-  padding:0px 0px 0px 16px;
-  box-sizing:border-box;
-  width:54%;
-  border:solid #007fda 1px;
-  border-radius:8px;
-  display:flex;
-  height:40px;
-  align-items:center;
-  justify-content:space-between
+.copyBtnDiv {
+  padding: 0px 0px 0px 16px;
+  box-sizing: border-box;
+  width: 54%;
+  border: solid #007fda 1px;
+  border-radius: 8px;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
 }
-.copyBtnDiv>button{
-  height:100%;
-  box-sizing:border-box;
-  padding:0px 10px 0px 10px;
-  border-radius:0px 8px 8px 0px;
-  color:#fff;
-  font-size:16px;
-  background:#007fda;
-  border:none;
-  cursor:pointer;
-  transition:0.3s
+.copyBtnDiv > button {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0px 10px 0px 10px;
+  border-radius: 0px 8px 8px 0px;
+  color: #fff;
+  font-size: 16px;
+  background: #007fda;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
 }
-.copyBtnDiv>button:hover{
-  background:#004270 ;
+.copyBtnDiv > button:hover {
+  background: #004270;
 }
 
-.AboutDiv{
+.AboutDiv {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0px 60px 50px 0px;
 }
-.AboutDiv>img{
+.AboutDiv > img {
   height: 300px;
   margin-right: 10%;
 }
-.AboutDiv>p{
+.AboutDiv > p {
   font-size: 20px;
 }
 
-.SkillDiv{
+.SkillDiv {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 30px;
-  width: 100%;
 }
-.projectDiv{
+.projectDiv {
   margin: 60px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px 3%;
 }
-.githubDiv{
+.githubDiv {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   width: 100%;
   margin: auto;
-  gap: 30px;;
+  gap: 30px;
   padding-left: 4%;
   box-sizing: border-box;
 }
 .github-calendar-container {
-  width:63%;
+  width: 63%;
   margin: auto;
   margin-bottom: 50px;
 }
 
-.contactDiv{
+.contactDiv {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 60px;
 }
 
-.contactDiv>img{
-  width: 36%
+.contactDiv > img {
+  width: 36%;
 }
-.contactDiv>div{
+.contactDiv > div {
   width: 50%;
 }
-.contactDiv>div>form>input{
+
+.home {
+  width: 100%;
+  height: 700px;
+  padding: 160px 6% 60px 6%;
+  box-sizing: border-box;
+}
+
+.contactDiv > div > form > input {
   width: 100%;
   height: 40px;
   margin-bottom: 20px;
   background-color: transparent;
   color: #fff;
-  border-radius: 5px ;
+  border-radius: 5px;
   border: 1px solid #2d475b;
   padding-left: 10px;
   font-size: 16px;
 }
 
-.contactCopybtn{
+.contactCopybtn {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
-
-.contactDiv>div>form>input::placeholder{
-  color:#4e6d85;
-  background:transparent ;
+.homeNameDiv {
+  width: 50%;
 }
 
-.homeCopybtnDiv{
+.pagesHeading {
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contactDiv > div > form > input::placeholder {
+  color: #4e6d85;
+  background: transparent;
+}
+
+.homeCopybtnDiv {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px
+  margin-top: 30px;
 }
 
-@media screen and (min-width: 1200px) and (max-width:1391px){
-  #user-detail-name{
+@media screen and (min-width: 1200px) and (max-width: 1391px) {
+  #user-detail-name {
     font-size: 48px;
   }
-  .hello{
+  .hello {
     font-size: 28px;
   }
-  .roleHeading{
+  .roleHeading {
     font-size: 26px;
   }
-  #designation{
+  #designation {
     font-size: 26px;
   }
-  .home-img{
-    width:440px;
+  .home-img {
+    width: 440px;
     height: 420px;
   }
-  .homeCopybtnDiv{
+  .homeCopybtnDiv {
     flex-direction: column;
     width: 660px;
   }
 
-  .contactCopybtn{
+  .contactCopybtn {
     flex-direction: column;
-    width: 660px
+    width: 660px;
   }
 
-  .AboutDiv>img{
+  .copyBtnDiv {
+    width: 340px;
+  }
+  .AboutDiv > img {
     height: 260px;
   }
-  .AboutDiv>p{
+  .AboutDiv > p {
     font-size: 19px;
+  }
+  .contactDiv > img {
+    width: 34%;
+  }
+  .contactDiv > div {
+    width: 52%;
+  }
+  .pagesHeading {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1199px) {
+  .SkillDiv {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .homeCopybtnDiv {
+    flex-direction: column;
+    width: 660px;
+  }
+  .contactCopybtn {
+    flex-direction: column;
+    width: 660px;
+  }
+  .home-img {
+    width: 380px;
+    height: 360px;
+  }
+
+  #user-detail-name {
+    font-size: 42px;
+  }
+  .hello {
+    font-size: 22px;
+  }
+  .roleHeading {
+    font-size: 22px;
+  }
+  #designation {
+    font-size: 22px;
+  }
+
+  .AboutDiv > img {
+    height: 240px;
+  }
+  .AboutDiv > p {
+    font-size: 17px;
+  }
+
+  .projectDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contactDiv > img {
+    width: 36%;
+  }
+  .contactDiv > div {
+    width: 54%;
+  }
+  .pagesHeading {
+    font-size: 30px;
+  }
+
+  .contactDiv > div {
+    font-size: 15px;
+  }
+  .home {
+    height: 620px;
+  }
+  .copyBtnDiv {
+    width: 340px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1049px) {
+  .SkillDiv {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .home-img {
+    width: 380px;
+    height: 360px;
+  }
+
+  #user-detail-name {
+    font-size: 36px;
+  }
+  .hello {
+    font-size: 19px;
+  }
+  .roleHeading {
+    font-size: 19px;
+  }
+  #designation {
+    font-size: 19px;
+  }
+
+  .projectDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .homeCopybtnDiv {
+    flex-direction: column;
+    width: 660px;
+    font-size: 15px;
+  }
+  .contactCopybtn {
+    flex-direction: column;
+    width: 660px;
+    font-size: 15px;
+  }
+  #buttons {
+    width: 245px;
+  }
+  .pagesHeading {
+    font-size: 28px;
+  }
+
+  .AboutDiv > img {
+    height: 200px;
+  }
+  .AboutDiv > p {
+    font-size: 15px;
+  }
+
+  .contactDiv > div > form > input {
+    font-size: 15px;
+  }
+  .copyBtnDiv > button {
+    font-size: 15px;
+  }
+  .githubDiv {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .home {
+    height: 640px;
+  }
+  .copyBtnDiv {
+    width: 330px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 899px) {
+  .homeMainDiv {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .SkillDiv {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .contactCopybtn {
+    flex-direction: column;
+    width: 660px;
+    font-size: 15px;
+  }
+  .projectDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @keyframes animateUser {
+    0% {
+      margin: auto;
+    }
+    100% {
+      margin: auto;
+    }
+  }
+  .home {
+    height: 910px;
+    padding-top: 100px;
+  }
+
+  .home-img {
+    width: 420px;
+    height: 400px;
+  }
+
+  #user-detail-name {
+    font-size: 44px;
+  }
+  .hello {
+    font-size: 21px;
+  }
+  .roleHeading {
+    font-size: 23px;
+  }
+  #designation {
+    font-size: 23px;
+  }
+
+  .homeNameDiv {
+    width: 100%;
+  }
+
+  .githubDiv {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .AboutDiv {
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .AboutDiv > img {
+    height: 250px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .AboutDiv > p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .homeCopybtnDiv {
+    font-size: 15px;
+  }
+  .contactCopybtn {
+    font-size: 15px;
+  }
+  .copyBtnDiv > button {
+    font-size: 15px;
+  }
+  .pagesHeading {
+    font-size: 28px;
+  }
+
+  .contactDiv {
+    flex-direction: column;
+  }
+
+  .contactDiv > div {
+    width: 100%;
+  }
+
+  .contactDiv > img {
+    width: 50%;
+  }
+  #buttons {
+    width: 245px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 699px) {
+  .homeMainDiv {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .SkillDiv {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contactCopybtn {
+    flex-direction: column;
+    width: 660px;
+    font-size: 15px;
+  }
+  @keyframes animateUser {
+    0% {
+      margin: auto;
+    }
+    100% {
+      margin: auto;
+    }
+  }
+  .home {
+    height: 910px;
+    padding-top: 100px;
+  }
+
+  .home-img {
+    width: 420px;
+    height: 400px;
+  }
+
+  #user-detail-name {
+    font-size: 38px;
+  }
+  .hello {
+    font-size: 20px;
+  }
+  .roleHeading {
+    font-size: 20px;
+  }
+  #designation {
+    font-size: 20px;
+  }
+
+  .homeNameDiv {
+    width: 100%;
+  }
+
+  .githubDiv {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+  .githubDiv > img {
+    width: 100%;
+  }
+
+  .AboutDiv {
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .AboutDiv > img {
+    height: 250px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .AboutDiv > p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .homeCopybtnDiv {
+    font-size: 15px;
+  }
+  .contactCopybtn {
+    font-size: 15px;
+  }
+  .copyBtnDiv > button {
+    font-size: 15px;
+  }
+  .pagesHeading {
+    font-size: 28px;
+  }
+
+  .contactDiv {
+    flex-direction: column;
+  }
+
+  .homeCopybtnDiv {
+    flex-direction: column;
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .copyBtnDiv {
+    width: 320px;
+  }
+  .contactDiv > div {
+    width: 100%;
+  }
+
+  .contactDiv > img {
+    width: 50%;
+  }
+  #buttons {
+    width: 245px;
+  }
+  .projectDiv {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 330px) and (max-width: 500px) {
+  .homeMainDiv {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .SkillDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contactCopybtn {
+    flex-direction: column;
+    width: 660px;
+    font-size: 14px;
+  }
+  @keyframes animateUser {
+    0% {
+      margin: auto;
+    }
+    100% {
+      margin: auto;
+    }
+  }
+  .home {
+    height: 820px;
+    padding-top: 100px;
+  }
+
+  .home-img {
+    width: 300px;
+    height: 280px;
+  }
+
+  #user-detail-name {
+    font-size: 34px;
+  }
+  .hello {
+    font-size: 19px;
+  }
+  .roleHeading {
+    font-size: 19px;
+  }
+  #designation {
+    font-size: 20px;
+  }
+
+  .homeNameDiv {
+    width: 100%;
+  }
+
+  .githubDiv {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+  .githubDiv > img {
+    width: 100%;
+  }
+
+  .AboutDiv {
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .AboutDiv > img {
+    height: 200px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .AboutDiv > p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .homeCopybtnDiv {
+    font-size: 12px;
+  }
+  .contactCopybtn {
+    font-size: 12px;
+  }
+  .copyBtnDiv > button {
+    font-size: 12px;
+  }
+  .pagesHeading {
+    font-size: 26px;
+  }
+
+  .contactDiv {
+    flex-direction: column;
+  }
+
+  .homeCopybtnDiv {
+    flex-direction: column;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .copyBtnDiv {
+    width: 270px;
+  }
+  .contactDiv > div {
+    width: 100%;
+  }
+
+  .contactDiv > img {
+    width: 50%;
+  }
+  #buttons {
+    width: 245px;
+  }
+  .projectDiv {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+
+@media screen and (min-width: 280px) and (max-width: 340px) {
+  .homeMainDiv {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .SkillDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contactCopybtn {
+    flex-direction: column;
+    width: 660px;
+    font-size: 14px;
+  }
+  @keyframes animateUser {
+    0% {
+      margin: auto;
+    }
+    100% {
+      margin: auto;
+    }
+  }
+  .home {
+    height: 780px;
+    padding-top: 100px;
+  }
+
+  .home-img {
+    width: 250px;
+    height: 230px;
+  }
+
+  #user-detail-name {
+    font-size: 30px;
+  }
+  .hello {
+    font-size: 16px;
+  }
+  .roleHeading {
+    font-size: 16px;
+  }
+  #designation {
+    font-size: 16px;
+  }
+
+  .homeNameDiv {
+    width: 100%;
+  }
+
+  .githubDiv {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+  .githubDiv > img {
+    width: 100%;
+  }
+
+  .AboutDiv {
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .AboutDiv > img {
+    height: 200px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .AboutDiv > p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .homeCopybtnDiv {
+    font-size: 12px;
+  }
+  .contactCopybtn {
+    font-size: 12px;
+  }
+  .copyBtnDiv > button {
+    font-size: 12px;
+  }
+  .pagesHeading {
+    font-size: 26px;
+  }
+
+  .contactDiv {
+    flex-direction: column;
+  }
+
+  .homeCopybtnDiv {
+    flex-direction: column;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .copyBtnDiv {
+    width: 270px;
+  }
+  .contactDiv > div {
+    width: 100%;
+  }
+
+  .contactDiv > img {
+    width: 50%;
+  }
+  #buttons {
+    width: 245px;
+  }
+  .projectDiv {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

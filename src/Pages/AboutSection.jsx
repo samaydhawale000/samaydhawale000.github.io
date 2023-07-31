@@ -16,7 +16,7 @@ export default function AboutSection() {
         }}
         className="nav-link about">
           
-        <h1 style={{ fontSize: "38px", textAlign: "center" }} id="about" className="about section">
+        <h1  id="about" className="about section pagesHeading">
           <FontAwesomeIcon icon={faAddressCard} size="sm" color="#007fda" />{" "}
           About Me
         </h1>

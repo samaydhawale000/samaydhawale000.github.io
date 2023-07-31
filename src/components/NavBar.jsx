@@ -11,6 +11,7 @@ import {
   faBriefcase,
   faCode,
   faPhoneVolume,
+  faBars
 } from "@fortawesome/free-solid-svg-icons";
 import resume from "../Resume/resume.pdf"
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -85,12 +86,12 @@ export default function NavBar() {
         <a href={resume} download="Samay-Dhawale-Resume" id="resume-link-1" style={{textDecoration:"none"}}>
         <ResumeBtn  id="resume-button-1">
             Resume <FontAwesomeIcon icon={faFileArrowDown} />
-          </ResumeBtn>
+        </ResumeBtn>
        </a>
           
         </div>
-
       </div>
+        <button className="hamburger"><FontAwesomeIcon icon={faBars} size="lg" color="#fff" /></button>
     </div>
   );
 }

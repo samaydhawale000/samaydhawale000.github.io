@@ -49,7 +49,7 @@ export default function Projects() {
         }}
       >
         <h1
-          style={{ fontSize: "38px", textAlign: "center" }}
+          className='pagesHeading'
         >
           <FontAwesomeIcon icon={faBriefcase} size="sm" color="#007fda" /> My
           Projects
