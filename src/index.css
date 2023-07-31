@@ -9,6 +9,26 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body::-webkit-scrollbar {
+  background-color: #2c4a60; 
+  width: 9px;
+  cursor: pointer;
+}
+
+body::-webkit-scrollbar:hover {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: #0076cb; 
+  border-radius: 9px;
+  cursor: pointer;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #108ee8; 
+  width: 12px;
+  cursor: pointer;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
