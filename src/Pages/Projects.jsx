@@ -89,9 +89,9 @@ export default function Projects() {
           />
           
           <ProjectCard
-            webpath={"samaydhawale000.github.io/"}
+            webpath={"https://musicmix.netlify.app/"}
             gitpath={
-              "https://github.com/samaydhawale000/samaydhawale000.github.io"
+              "https://github.com/samaydhawale000/sad-mouth-6866_Project_Unit-6"
             }
             tech={"React js | CSS | JavaScript | Chakra UI | NodeJS | MongoDB | ExpressJS"}
             title={"MusicMix"}
