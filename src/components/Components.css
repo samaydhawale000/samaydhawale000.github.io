@@ -138,8 +138,8 @@
 }
 
 .sideNavMainDiv{
-  width: 290px;
-  background-color:rgba(0, 18, 28, 0.9);
+  width: 260px;
+  background-color:rgba(0, 18, 28, 0.97);
   height: 100rem;
   z-index: 100;
   position: fixed;

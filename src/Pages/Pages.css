@@ -629,7 +629,7 @@
 
   .home-img {
     width: 300px;
-    height: 280px;
+    height: 286px;
   }
 
   #user-detail-name {
@@ -749,7 +749,7 @@
 
   .home-img {
     width: 250px;
-    height: 230px;
+    height: 238px;
   }
 
   #user-detail-name {
@@ -806,6 +806,11 @@
 
   .contactDiv {
     flex-direction: column;
+  }
+
+  .github-calendar-container{
+    width:100%;
+    padding: 0px;
   }
 
   .homeCopybtnDiv {
