@@ -137,6 +137,17 @@
   box-sizing: border-box;
 }
 
+.sideNavMainDiv{
+  width: 290px;
+  background-color:rgba(0, 18, 28, 0.9);
+  height: 100rem;
+  z-index: 100;
+  position: fixed;
+  right: 0;
+  box-shadow: rgb(1, 26, 39) 0px 20px 15px 0px;
+  transition: 1s ease-in-out; 
+}
+
 @media screen and (min-width: 1050px) and (max-width: 1199px) {
   .NavLink {
     font-size: 15px;
@@ -195,6 +206,7 @@
     flex-direction: column;
     font-size: 15px;
   }
+
 }
 
 @media screen and (min-width: 500px) and (max-width: 699px) {

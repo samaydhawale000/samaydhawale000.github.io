@@ -21,7 +21,6 @@ const [image,setImage] = useState(img[0])
         i++
       }
       setImage(img[i])
-      console.log(image)
     },2000)
 
     return () => {

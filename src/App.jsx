@@ -8,6 +8,7 @@ import Skills from './Pages/Skills';
 import Projects from './Pages/Projects';
 import Github from './Pages/Github';
 import Contact from './Pages/Contact';
+import SideNav from './components/SideNav';
 
 function App() {
   return (
