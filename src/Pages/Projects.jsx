@@ -57,7 +57,7 @@ export default function Projects() {
 
         <div className="projectDiv">
           <ProjectCard
-            webpath={"https://techbazar-app.vercel.app/"}
+            webpath={"https://techbazar-app-v-sukumar.vercel.app/"}
             gitpath={
               "https://github.com/samaydhawale000/Techbazar_Project_Unit-5"
             }
